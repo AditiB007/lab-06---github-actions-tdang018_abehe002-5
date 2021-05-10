@@ -7,12 +7,17 @@ class Rectangle {
         int height;
     public:
         Rectangle();
-        Rectangle(int w,int h);
+        Rectangle(int w,int h): width(w), height(h) {}
 
         void set_width(int w);
         void set_height(int h);
-        int area();
-        int perimeter();
+        int area() {
+            return (w * h);
+        }
+
+        int perimeter() {
+            return ((2 * w) + (2 * h));
+        }
 };
 
 #endif // RECTANGLE_HPP
