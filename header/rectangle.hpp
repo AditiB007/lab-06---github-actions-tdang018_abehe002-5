@@ -6,17 +6,19 @@ class Rectangle {
         int width;
         int height;
     public:
-        Rectangle();
-        Rectangle(int w,int h): width(w), height(h) {}
+        Rectangle() { width = 0; height = 0; }
+        Rectangle(int w,int h): width(w), height(h) {
+          if(w < 1 || h < 1) { width = 0; height = 0; }
+        }
 
         void set_width(int w);
         void set_height(int h);
         int area() {
-            return (w * h);
+            return (width * height);
         }
 
         int perimeter() {
-            return ((2 * w) + (2 * h));
+            return ((2 * width) + (2 * height));
         }
 };
 
