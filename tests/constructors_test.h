@@ -10,6 +10,8 @@ TEST(ConstructorsTest, Default){
   int perim = rect->perimeter();
   EXPECT_EQ(area, 0);
   EXPECT_EQ(perim, 0);
+
+  delete rect;
 }
 
 

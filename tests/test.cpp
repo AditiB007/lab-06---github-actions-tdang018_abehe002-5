@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 
-//#include "perimeter_test.h"
+#include "perimeter_test.h"
 #include "constructors_test.h"
 
 int main(int argc, char **argv) {
