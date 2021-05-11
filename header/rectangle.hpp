@@ -12,11 +12,11 @@ class Rectangle {
         void set_width(int w);
         void set_height(int h);
         int area() {
-            return (w * h);
+            return (width * height);
         }
 
         int perimeter() {
-            return ((2 * w) + (2 * h));
+            return ((2 * width) + (2 * height));
         }
 };
 

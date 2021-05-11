@@ -5,9 +5,11 @@
 #include "../header/rectangle.hpp"
 
 TEST(ConstructorsTest, Default){
-  Rectangle rect();
-  EXPECT_EQ(rect.area , 0);
-  EXPECT_EQ(rect.perimeter , 0);
+  Rectangle* rect = new Rectangle();
+  int area = rect->area();
+  int perim = rect->perimeter();
+  EXPECT_EQ(area, 0);
+  EXPECT_EQ(perim, 0);
 }
 
 
