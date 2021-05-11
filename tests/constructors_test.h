@@ -14,5 +14,25 @@ TEST(ConstructorsTest, Default){
   delete rect;
 }
 
+TEST(ConstructorsTest, Negative){
+  Rectangle* rect = new Rectangle(-1,-2);
+  int area = rect->area();
+  int perim = rect->perimeter();
+  EXPECT_EQ(area, 0);
+  EXPECT_EQ(perim, 0);
+
+  delete rect;
+}
+
+TEST(ConstructorsTest, Normal){
+  Rectangle* rect = new Rectangle(2,3);
+  int area = rect->area();
+  int perim = rect->perimeter();
+  EXPECT_EQ(area, 6);
+  EXPECT_EQ(perim, 10);
+
+  delete rect;
+}
+
 
 #endif // __CONSTRUCTORS_TEST_H__
