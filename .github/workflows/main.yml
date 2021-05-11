@@ -37,13 +37,8 @@ jobs:
           echo test, and deploy your project.
 
       # Makefiles
-      - name: Run make command
-        run: cmake .
-        
-      # Executable
-      - name: Run executable
-        run: ./rectangle
-        
-      # Test
-      #- name: Run tests
-      #  run: ./test
+      - name: Run
+        run: |
+          cmake .
+          make
+          ./test
