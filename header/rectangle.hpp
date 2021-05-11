@@ -6,7 +6,7 @@ class Rectangle {
         int width;
         int height;
     public:
-        Rectangle();
+        Rectangle() { width = 0; height = 0; }
         Rectangle(int w,int h): width(w), height(h) {}
 
         void set_width(int w);
