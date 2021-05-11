@@ -2,6 +2,7 @@
 
 #include "perimeter_test.h"
 #include "constructors_test.h"
+#include "area_test.h"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
