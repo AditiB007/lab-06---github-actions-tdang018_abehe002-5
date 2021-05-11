@@ -4,7 +4,7 @@ name: CI
 on:	
   # Triggers the workflow on push or pull request events but only for the main branch	
   push:	
-    branches: [ main, AditiB007/ci_setup, tdang93/Test ]	
+    branches: [ main, AditiB007/passing_tests, tdang93/failing_tests ]	
   pull_request:	
     branches: [ main ]	
   # Allows you to run this workflow manually from the Actions tab	
