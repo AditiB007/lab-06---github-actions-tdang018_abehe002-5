@@ -12,4 +12,20 @@ TEST(PerimeterTest, Default){
   delete rect;
 }
 
+TEST(PerimeterTest, Zero){
+  Rectangle* rect = new Rectangle(0,2);
+  int perim = rect->perimeter();
+  EXPECT_EQ(perim, 0);
+
+  delete rect;
+}
+
+TEST(PerimeterTest, Negative){
+  Rectangle* rect = new Rectangle(-1, 2);
+  int perim = rect->perimeter();
+  EXPECT_EQ(perim, 0);
+
+  delete rect;
+}
+
 #endif // __PERIMETER_H__

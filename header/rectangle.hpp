@@ -8,7 +8,7 @@ class Rectangle {
     public:
         Rectangle() { width = 0; height = 0; }
         Rectangle(int w,int h): width(w), height(h) {
-          if(w < 0 || h < 0) { width = 0; height = 0; }
+          if(w < 1 || h < 1) { width = 0; height = 0; }
         }
 
         void set_width(int w);
